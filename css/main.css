@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FBF3E4;
+  font-family: sans-serif;
+  color: #105652;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin: 3rem auto 2rem auto;
+}
+
+.counter__container {
+  width: 15rem;
+  height: 8rem;
+  background: #DFD8CA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.counter__container .counter__value, .counter__container .counter__btn {
+  width: 2rem;
+  text-align: center;
+  height: 2rem;
+  margin: 0 0.1rem;
+}
+.counter__container .counter__btn {
+  border: none;
+  background: #B91646;
+  color: #DFD8CA;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
