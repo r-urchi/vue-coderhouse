@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script defer src="js/app.js"></script>
-    <title>Clase 2</title>
+    <title>Clase 4</title>
 </head>
 <body>
 
     <div id="app">
 
-        <h1>Desafío - Contador</h1>
-        
-        <div class="counter__container">
-            <button v-on:click=subtract() class="counter__btn">-</button>
-            <input type="number" v-bind:value="counterValue" class="counter__value" disabled/>
-            <button v-on:click=add() class="counter__btn">+</button>
+        <h1>Desafío - Tabla</h1>
+
+        <div class="table__container">
+
+            <button class="mode" v-on:click=darkMode()>{{changeMode}}</button>
+            
+            <div v-bind:class="mode ? 'darkMode' : 'lightMode'" > 
+                <table-products v-bind:products="products" /> 
+            </div>
         </div>
 
     </div>
